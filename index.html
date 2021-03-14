@@ -180,7 +180,6 @@
                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                  Loading...
               </button>
-
             </form>
           </div>
         </div>
@@ -209,16 +208,17 @@
      const btnKirim = document.querySelector('.btn-kirim');
      const btnLoading = document.querySelector('.btn-loading');
      const myAlert = document.querySelector('.my-alert');
-     // ketika tombol submit diklik
-     // tampilkan tombol loading, hilangkan tombol kirim
-     btnLoading.classList.toggle('d-none');
-     btnKirim.classList.toggle('d-none');
 
       form.addEventListener('submit', e => {
         e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-           // tampilkan tombol kirim, hilangkan tombol loading
+          // tampilkan tombol kirim, hilangkan tombol loading
           btnLoading.classList.toggle('d-none');
           btnKirim.classList.toggle('d-none');
           // tampilkan alert
@@ -230,14 +230,5 @@
         .catch(error => console.error('Error!', error.message))
      })
     </script>
-
   </body>
 </html>
-
-
-
-
-
-
-
-
