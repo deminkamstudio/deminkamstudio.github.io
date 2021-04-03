@@ -44,6 +44,7 @@ body{
   height: 500px;
   margin: auto;
   background: #1d212b;
+  border-radius: 5px;
 }
 
 .img-slider .slide {
