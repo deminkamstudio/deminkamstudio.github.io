@@ -15,6 +15,9 @@
   background-color: #e2edff;
 }
 
+#about span a {
+  text-decoration: none;
+}
 section {
   padding-top: 5rem;
 }
