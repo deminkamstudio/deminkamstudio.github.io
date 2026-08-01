@@ -320,14 +320,14 @@
             <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <form name="deminkamstudio">
+          <form name="deminkamstudio" autocomplete="off">
             <div class="mb-3">
               <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="nama">
+              <input type="text" id="nama" class="form-control" placeholder="masukkan nama" name="nama" autofocus required minlength="2">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" />
+              <input type="email" id="email" class="form-control" placeholder="masukkan email" name="email" required />
             </div>
             <div class="mb-3">
               <label for="pesan" class="form-label">Pesan</label>
