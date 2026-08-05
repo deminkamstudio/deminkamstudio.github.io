@@ -15,8 +15,6 @@ section {
   background-color: #e2edff;
 }
 
-
-
 /* My Keyboard Section */
 .keyboard-box {
   position: relative;
@@ -27,7 +25,7 @@ section {
 }
 
 .keyboard-box::before {
-  content: 'MY';
+  content: "MY";
   position: absolute;
   color: #fff;
   font-size: 6em;
@@ -45,7 +43,7 @@ section {
 }
 
 .keyboard-box::after {
-  content: 'KEYBOARD';
+  content: "KEYBOARD";
   position: absolute;
   color: #fff;
   font-size: 4.3em;
@@ -106,4 +104,13 @@ section {
 
 .keyboard-box:hover .keyboard-img {
   transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+}
+
+/* css coppy */
+textarea {
+  padding: 1rem 0.5rem;
+  field-sizing: content;
+  min-block-size: 3.5rlh;
+  min-inline-size: 23ch;
+  max-inline-size: 50ch;
 }
